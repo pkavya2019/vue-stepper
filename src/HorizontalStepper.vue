@@ -8,7 +8,7 @@
                         <i class="material-icons">keyboard_arrow_left</i>
                     </div>
                 </template>
-                <template v-for="(step, index) in steps">
+                <!--<template v-for="(step, index) in steps">
                     <div :class="['step', isStepActive(index, step)]" :key="index" :style="{width: `${100 / steps.length}%`}">
                         <div class="circle">
                             <i class="material-icons md-18">
@@ -20,7 +20,7 @@
                             <h5 class="step-subtitle">{{step.subtitle}}</h5>
                         </div>
                     </div>
-                </template>
+                </template> -->
                 <div v-if="topButtons" :class="['stepper-button-top next', !canContinue ? 'deactivated' : '']" @click="nextStep()">
                     <i class="material-icons">keyboard_arrow_right</i>
                 </div>
